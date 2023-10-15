@@ -9,5 +9,5 @@ To use it:
 
 If you are on windows and cannot run the Makefile:
 
-  * Run `go build` to build your systems binary and execute.
+  * Run `go build` to build your systems executable.
   * Run `./go-healthcheck.exe --domain=YOUR-DOMAIN.com`. Replace 'YOUR-DOMAIN.com' with the domain of your choice.
