@@ -7,6 +7,7 @@ build:
 	@GOOS=windows go build -o bin/go-healthcheck-windows
 
 run: build
+	@echo;
 	@echo "Checking status of '$(DOMAIN_NAME)'... "; \
 	echo;
 
