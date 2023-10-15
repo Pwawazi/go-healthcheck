@@ -1,4 +1,4 @@
-DOMAIN_NAME := $(shell read -p "Enter the domain name: " domain_name && echo $$domain_name)
+DOMAIN_NAME := $(shell read -p "Enter the domain name(e.g. google.com): " domain_name && echo $$domain_name)
 
 build:
 	@go build -o bin/go-healthcheck
@@ -16,3 +16,6 @@ run: build
 
 test:
 	@go test -v ./...
+
+help:
+	@./bin/go-healthcheck --help
