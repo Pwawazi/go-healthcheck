@@ -7,7 +7,12 @@ build:
 	@GOOS=windows go build -o bin/go-healthcheck-windows
 
 run: build
+	@echo "Checking status of '$(DOMAIN_NAME)'... "; \
+	echo;
+
 	@./bin/go-healthcheck --domain $(DOMAIN_NAME)
+
+	@echo; \
 
 test:
 	@go test -v ./...
